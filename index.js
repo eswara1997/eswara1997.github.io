@@ -1,5 +1,17 @@
-import {setUserId, setAppId, addEvent, setPoseFrequency, setRenderFrequency, setBatteryFrequency, setSampler} from 'vrtigo-analytics';
+new TypeIt('h1', {
+  //lifelike: true,
+  nextStringDelay: 400,
+  deleteSpeed: 100
 
- var user = setUserId('user55@oculus.com');
- var app = setAppId("0c680a1e-8a32-46d5-ab22-087d6ea8d1cf");
- var setSample = setSampler(true);
+})
+  .type(' <u style="text-decoration-color: #66fcf1;"> VR and AR.</u>')
+.pause(500)
+.delete(10)
+.type('<u style="text-decoration-color: #66fcf1;">creative design.</u>')
+.pause(500)
+.delete(16)
+.type('<u style="text-decoration-color: #66fcf1 #4717f6;">new technologies.</u>')
+.pause(500)
+.delete(2)
+.type('<u style="text-decoration-color: #66fcf1;">building things!</u>')
+.pause(500);

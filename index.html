@@ -1,30 +1,649 @@
 <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>VRTIGO • WebVR Video Player</title>
-    <meta name="description" content="VRTIGO WEBVR Video Player">
 
-    <style>
-    #play-button {
-      position: fixed;
-        top: calc(50% - 1em);
-      left: calc(50% - 2em);
-      width: 4em;
-      height: 2em;
-      z-index: 10;
-    }
-    </style>
-    <button id="play-button">Play</button>
-    <script src="bundle.js"></script>
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Page title
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Eswar Anandapadmanaban</title>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+
+    <!-- Icons
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/icons/Linea/styles.css" />
+    <link rel="stylesheet" href="assets/icons/Elegant/style.css" />
+
+
   </head>
-    <body>
-      <a-scene stats>
-        <a-assets>
-          <video id="vid" autoplay="false" loop="true" width="100%" height="100%" crossOrigin="anonymous" style="display: none" src="https://s3-us-west-1.amazonaws.com/vrtigo-demo/city-360.mp4">
-        </a-assets>
-        <a-videosphere src="#vid" rotation="0 180 0"></a-videosphere>
-        <a-entity vrtigo></a-entity>
-      </a-scene>
-      <script src="button-script.js"></script>
-    </body>
+
+<!-- Body Start
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body data-spy="scroll" data-target=".navigation">
+
+<!-- Preloader -->
+<div class="loading-mask">
+  <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+
+
+
+
+<!-- Page Wrap -->
+
+<div class="page-wrapper">
+
+
+<!-- Fixed Header & Navigation
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="sidebar-menu">
+    <div class="menu-close"><span aria-hidden="true" class="icon_close"></span></div>
+    <h3 class="smlogo">EA</h3>
+    <nav class="navigation">
+      <ul class="smenu navigation">
+        <li><a href="#page-intro">Home</a></li>
+        <li><a href="#page-about">About</a></li>
+        <li><a href="#page-resume">Resume</a></li>
+        <li><a href="#page-folio">Portfolio</a></li>
+        <li><a href="#page-contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+
+<header class="header-fixed">
+
+  <div class="site-menu col-md-2 col-sm-2 col-xs-4">
+    <div class="menu-bar mb-top"></div>
+    <div class="menu-bar mb-mid"></div>
+    <div class="menu-bar mb-bot"></div>
+  </div>
+
+  <div class="site-logo col-md-10 col-sm-10 col-xs-8">
+    <h3>EA</h3>
+  </div>
+
+
+</header>
+
+
+<div id="page">
+
+<!-- Section Intro (Home)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="page-intro">
+
+    <div class="main-intro">
+
+        <div class="main-content">
+
+            <div class="container">
+
+                <div class="section-title sth">
+
+
+
+                  <span>
+                    Home
+                  </span>
+                </div>
+                <h1>Hello! I'm Eswar Anand.<br> Student, <i> Engineer, & Developer</i>.<br>
+  I love
+
+</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Section About
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="page-about">
+
+
+
+<div class="container">
+
+
+  <div class="section-title sth">
+    <span>
+      About me
+    </span>
+  </div>
+
+<div class="about-content">
+
+  <h2 style="color: #fff;">
+    Hey There! I'm Eswar, current junior at MIT, studying Electrical Engineering and Computer Science, learning to build the craziest hardware and software technologies for our future.
+  </h2>
+
+  <h2 style="color: #fff;">
+    I've worked on VR and AR for over two years but broadly, I work on innovative foward looking ideas, imagining the digital future that we will be entering.
+  </h2>
+
+</div>
+
+
+
+
+
+</div>
+
+</section>
+
+
+<!-- Section Resume
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<section id="page-resume">
+
+<div class="container">
+
+  <div class="section-title">
+    <span>
+      Resume
+    </span>
+
+    <h2>
+      <br> Here's my education & jobs.
+    </h2>
+
+  </div>
+
+
+<div class="resume-content">
+
+      <div class="col-md-6 resumer-ed nplr">
+      <div class="icon icon-basic-book"></div>
+        <ul class="resume-list nop">
+          <li>
+
+            <b>Massachusetts Institute of Technology</b><i>2015-2019</i>
+            <p>Studying Electrical Engineering and Computer Science. Balancing eclectic courses like Toy Design and Analog electronics, I convince my advisor that I know what I'm doing. </p>
+            <p>I hope to graduate with hardware, software, and design skills.</p>
+          </li>
+          <li>
+
+            <b>Undergraduate Researcher for NASA</b><i>present</i>
+            <p>Working with the MIT Man Vehicle Lab and the NASA BASALT project to create Augmented Reality displays for astronauts. </p>
+          </li>
+          <li>
+
+
+            <b>Dr. Ronald McNair Academic High School</b><i>2011-2015</i>
+
+
+          </li>
+
+        </ul>
+    </div>
+
+    <div class="col-md-6 resumer-em nplr">
+      <div class="icon icon-basic-spread-text-bookmark"></div>
+            <ul class="resume-list nop">
+
+              <li>
+
+                <b>Intern at Intel Client Computing Group</b><i>2014-2015</i>
+                <p>Worked on optimizations for Windows Mixed Reality Headsets. Built workloads and stress tests for XR platforms.</p>
+                <p> Worked on computer vision, Microsoft Azure, and the Intel Movidius VPU.<br><br></p>
+
+
+              </li>
+              <li>
+
+                <b>Intern at NASDAQ Innovation Labs</b><i>2011-2014</i>
+                <p>Designed and built a Hololens augmented reality data visualization and analytics tool. Designed and built from scratch in 3 weeks.</p>
+              </li>
+              <li>
+
+                <b>Intern at Samsung NEXT Accelerator</b><i>2011-2014</i>
+                <p>Worked with portfolio company VRTIGO building an analytics platform for mobile VR. Worked extensively with WebVR, Unity, and A-Frame.</p>
+              </li>
+            </ul>
+    </div>
+</div>
+
+
+
+
+</div>
+
+</section>
+
+<!-- Section Portfolio
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section id="page-folio">
+
+<div class="container">
+
+  <div class="section-title">
+    <span>
+      Portfolio
+    </span>
+
+    <h2>
+      I've been crafting lots of projects. <br>
+      These are my latest ones
+    </h2>
+
+  </div>
+
+
+
+
+    <ul class="filters filters-group nop">
+      <li class="filter is-checked" data-filter="*">All</li>
+      <li class="filter" data-filter=".ill">section2</li>
+      <li class="filter" data-filter=".brand">Section3</li>
+      <li class="filter" data-filter=".photo">Section4</li>
+
+    </ul>
+
+
+
+
+    <div id="isotopeGrid" class="mGrid">
+
+        <div class="gutter-sizer"></div>
+
+
+        <div class="itemIso item50fit brand">
+            <a class="image-modal" data-toggle="modal" data-target=".modal1" href="#image-modal1">
+                <img src="assets/images/01.jpg" alt="">
+                <div class="item-hover">
+                    <div class="item-hover-content">
+                        <h6>Project title</h6>
+                        <i>branding</i>
+                    </div>
+                </div>
+            </a>
+
+            <div id="image-modal1" class="mfp-hide modal-box">
+                  <img src="assets/images/01.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Project title</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="itemIso item50fit ill">
+            <a class="image-modal" data-toggle="modal" data-target=".modal1" href="#image-modal2">
+                <img src="assets/images/02.jpg" alt="">
+                <div class="item-hover">
+                    <div class="item-hover-content">
+                        <h6>Project title</h6>
+                        <i>illustration</i>
+                    </div>
+                </div>
+            </a>
+
+            <div id="image-modal2" class="mfp-hide modal-box">
+                  <img src="assets/images/02.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Project title</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="itemIso item50fit photo">
+            <a class="image-modal" data-toggle="modal" data-target=".modal1" href="#image-modal3">
+                <img src="assets/images/03.jpg" alt="">
+                <div class="item-hover">
+                    <div class="item-hover-content">
+                        <h6>Project title</h6>
+                        <i>photography</i>
+                    </div>
+                </div>
+            </a>
+
+            <div id="image-modal3" class="mfp-hide modal-box">
+                  <img src="assets/images/03.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Project title</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="itemIso item50fit ill">
+            <a class="image-modal" data-toggle="modal" data-target=".modal1" href="#image-modal4">
+                <img src="assets/images/04.jpg" alt="">
+                <div class="item-hover">
+                    <div class="item-hover-content">
+                        <h6>Project title</h6>
+                        <i>illustration</i>
+                    </div>
+                </div>
+            </a>
+
+            <div id="image-modal4" class="mfp-hide modal-box">
+                  <img src="assets/images/04.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Project title</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="itemIso item50fit photo">
+            <a class="image-modal" data-toggle="modal" data-target=".modal1" href="#image-modal5">
+                <img src="assets/images/07.jpg" alt="">
+                <div class="item-hover">
+                    <div class="item-hover-content">
+                        <h6>Project title</h6>
+                        <i>photography</i>
+                    </div>
+                </div>
+            </a>
+
+            <div id="image-modal5" class="mfp-hide modal-box">
+                  <img src="assets/images/07.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Project title</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+            </div>
+
+        </div>
+
+
+        <div class="itemIso item50fit brand">
+            <a class="image-modal" data-toggle="modal" data-target=".modal6" href="#image-modal1">
+                <img src="assets/images/08.jpg" alt="">
+                <div class="item-hover">
+                    <div class="item-hover-content">
+                        <h6>Project title</h6>
+                        <i>branding</i>
+                    </div>
+                </div>
+            </a>
+
+            <div id="image-modal6" class="mfp-hide modal-box">
+                  <img src="assets/images/08.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Project title</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+</section>
+
+
+<!-- Section Services
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="page-services">
+
+  <div class="container">
+
+    <div class="section-title sth">
+      <span>
+        Skills
+      </span>
+
+      <h2 style="color:white;">
+        Some of the things that I can do:
+      </h2>
+
+    </div>
+
+
+    <div class="row svr1">
+      <div class="svrb col-md-3 col-sm-6">
+        <div class="icon icon_tools"></div>
+        <br>
+        <span>Rapid Hardware Prototyping</span>
+        <p>Build rapid prototypes for hardware products and designs</p>
+      </div>
+      <div class="svrb col-md-3 col-sm-6">
+        <div class="icon icon-basic-webpage-img-txt"></div>
+        <span>Web Development</span>
+        <p>Design awesome website like this one (or even for VR)</p>
+        <br>
+      </div>
+      <div class="svrb col-md-3 col-sm-6">
+        <div class="icon icon-basic-keyboard"></div>
+        <span>Robust Software</span>
+        <p>Build complex systems for applications like voice recognition or autonomous drone control.</p>
+      </div>
+      <div class="svrb col-md-3 col-sm-6">
+        <div class="icon icon-basic-eye"></div>
+        <span>VR/AR Applications</span>
+        <p>Design cutting edge VR and AR applications. Not just games.</p>
+        <br>
+      </div>
+    </div>
+
+    <div class="row svr2">
+      <div class="svrb col-md-3 col-sm-6">
+          <div class="icon icon_camera_alt" ></div>
+          <br>
+        <span>Computer Vision</span>
+        <p>Build systems for understanding the world around through cameras, (3d and 2d).</p>
+      </div>
+      <div class="svrb col-md-3 col-sm-6">
+          <div class="icon icon-basic-cloud"></div>
+        <span>Edge Computing & IoT</span>
+        <p>Programming Hybrid cloud solutions, particularly useful for embedded devices</p>
+      </div>
+      <div class="svrb col-md-3 col-sm-6">
+          <div class="icon icon-basic-pencil-ruler"></div>
+        <span>Graphic Design</span>
+        <p>Making custom graphic assets through Illustrator, Photoshop, CAD, sketchup and more. </p>
+      </div>
+      <div class="svrb col-md-3 col-sm-6">
+          <div class="icon icon-basic-bolt"></div>
+        <span>Power & Performance Testing</span>
+        <p>PnP testing and optimizing of applications for different hardware requirements. </p>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Section Contact
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section id="page-contact">
+
+<div class="container">
+
+
+  <div class="section-title">
+    <span>
+      Contact
+    </span>
+
+    <h2>
+      Get in touch with me
+    </h2>
+
+  </div>
+
+
+
+
+<div class="row contact-content">
+
+
+
+    <div class="contact-form">
+
+        <!--MESSAGE SENT SUCCESFULLY-->
+            <div id="message"></div>
+
+        <!--MAIN FORM-->
+
+        <form method="post" action="assets/contact.php" name="contactform" id="contactform">
+
+        <fieldset>
+
+            <div class="contact-field col-md-4 col-sm-12 col-xs-12 nplr">
+                <input name="name" type="text" id="name" placeholder="Name* :" size="30" value="" />
+            </div>
+
+            <div class="contact-field col-md-4 col-sm-12 col-xs-12 nplr">
+                <input name="email" type="text" id="email" placeholder="E-mail* :" size="30" value="" />
+            </div>
+
+            <div class="contact-field col-md-4 col-sm-12 col-xs-12 nplr">
+                <input name="subject" type="text" id="subject" placeholder="Subject* :" size="30" value="" />
+            </div>
+
+            <div class="contact-field col-md-12 col-sm-12 col-xs-12 nplr">
+                <textarea name="comments" cols="40" rows="5" placeholder="Message* :" id="comments"></textarea>
+            </div>
+
+            <div class="submit-but col-md-12 col-sm-12 col-xs-12 nplr">
+                <input type="submit" class="submit" id="submit" value="Send it" />
+            </div>
+
+        </fieldset>
+
+        </form>
+        <!--END Main form-->
+
+    <!-- END contact FORM-->
+
+
+        </div>
+
+
+
+</div>
+
+
+</div>
+
+<div id="map"></div>
+
+</section>
+
+
+<!-- Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<footer class="page-footer">
+
+    <div class="container">
+
+        <div class="footer-copyright col-md-6">
+            <p>© 2016 Scrils. All Rights Reserved.</p>
+        </div>
+
+        <ul class="footer-social col-md-6">
+
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+        </ul>
+
+    </div>
+
+</footer>
+
+</div>
+
+</div>
+<!--end page-wrapper-->
+
+<!-- JAVASCRIPTS=========== -->
+
+<script src="assets/js/jquery-2.1.3.js"></script>
+<!-- AJAX Form Submit -->
+<script src="assets/js/contactform.js"></script>
+<!--Main Bootstrap JS-->
+<script src="assets/js/bootstrap.js"></script>
+<!--JS for easy scrolling-->
+<script src="assets/js/jquery.easing.js"></script>
+<!--JS for Isotope Grid-->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<!--Scripts-->
+<script src="assets/js/scripts.js"></script>
+<!-- Smooth Scroll & Nav & active -->
+<script src="assets/js/nav-active.js"></script>
+<script src="assets/js/smoothscroll.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/headerscroll.js"></script>
+<!-- Magnific Popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Wow Animations -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Google maps -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.2.0/typeit.min.js"></script>
+
+<script  src="index.js"></script>
+
+
+
+
+</body>
 </html>
