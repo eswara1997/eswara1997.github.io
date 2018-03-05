@@ -478,7 +478,7 @@ ul.nop {
 
 
 .modal-box {
-	max-width: 550px;
+	max-width: 640px;
 	background: #fff;
 	position: relative!important;
 	margin: 0 auto;
@@ -491,14 +491,18 @@ ul.nop {
 .modal-box-content {
 	padding: 25px;
 }
-.modal-box-content h4 {
+.modal-box-content-2 {
+	padding: 0px;
+}
+.modal-box-content, .modal-box-content-2 h4 {
 	font-size: 20px;
 	font-weight: 800;
 	color: #222222;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	padding-left: 5 px;
 }
-.modal-box-content p {
+.modal-box-content, .modal-box-content-2 p {
 	font-size: 15px;
 	text-align: left;
 	line-height: 30px;
