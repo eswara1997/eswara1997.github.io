@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 </head>
 <body>
+
+  <img id="profileImage"></img>
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -80,6 +82,12 @@
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
     });
+
+    FB.api('/me', function(response) {
+      console.log('Successful ID for: ' + response.id);
+      var im = document.getElementById("profileImage").setAttribute("src", "http://graph.facebook.com/" + response.id + "/picture?type=normal");
+    });
+
   }
 </script>
 
