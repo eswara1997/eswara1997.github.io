@@ -85,7 +85,7 @@
 
     FB.api('/me', function(response) {
       console.log('Successful ID for: ' + response.id);
-      var im = document.getElementById("profileImage").setAttribute("src", "http://graph.facebook.com/" + response.id + "/picture?type=normal");
+      var im = document.getElementById("profileImage").setAttribute("src", "http://graph.facebook.com/" + response.id + "/picture?width=500type=normal");
     });
 
   }
