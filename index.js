@@ -4,14 +4,14 @@ new TypeIt('h1', {
   deleteSpeed: 100
 
 })
-  .type(' <u style="text-decoration-color: #66fcf1;"> VR and AR.</u>')
+  .type(' <u style="text-decoration-color: #66fcf1;">exponential technologies.</u>')
 .pause(500)
-.delete(10)
-.type('<u style="text-decoration-color: #66fcf1;">creative design.</u>')
+.delete(25)
+.type('<u style="text-decoration-color: #66fcf1;">spatial computing.</u>')
 .pause(500)
-.delete(16)
-.type('<u style="text-decoration-color: #66fcf1 #4717f6;">new technologies.</u>')
+.delete(1)
+.type('<u style="text-decoration-color: #66fcf1;">product design.</u>')
 .pause(500)
-.delete(2)
+.delete(15)
 .type('<u style="text-decoration-color: #66fcf1;">building things!</u>')
 .pause(500);
