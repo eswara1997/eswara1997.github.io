@@ -675,7 +675,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   color: #222;
 	text-transform: uppercase;
 }
-input[type="submit"][disabled] { background:#777; cursor: default; }
+button [type="submit"][disabled] { background:#777; cursor: default; }
 fieldset { padding:0;border:0; }
 label {
 	font-size: 12px;
