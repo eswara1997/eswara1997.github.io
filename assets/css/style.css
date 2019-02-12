@@ -382,12 +382,16 @@ ul.nop {
 	05. Section Portfolio
 ---------------------------------------------------*/
 #page-folio {
-	padding: 100px 0;
+	padding: 50px 0;
 	background: #fff;
 	color: #222;
 
 }
 /* ---- isotope ---- */
+.folio{
+	width: 75%;
+}
+
 .mGrid {
 	margin-top: 50px;
 }
@@ -398,20 +402,24 @@ ul.nop {
   	transition: all .25s ease-in-out;
 }
 .itemIso {
-	position: relative;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	float: left;
+	padding: 20px;
 
 }
 .itemIso a {
+	float: left;
 	display: block;
 	overflow: hidden;
-	position: relative;
   cursor: pointer;
 }
 
 .item50fit {width: 47%;}
+
+.grid-sizer,
 .item33 {width: 33.3%;}
+.item33Left {width: 33.3%;
+	margin-left: 66%;
+}
 .item50 {width: 50%;}
 .filters li {
 	text-transform: uppercase;
@@ -675,7 +683,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   color: #222;
 	text-transform: uppercase;
 }
-button [type="submit"][disabled] { background:#777; cursor: default; }
+input[type="submit"][disabled] { background:#777; cursor: default; }
 fieldset { padding:0;border:0; }
 label {
 	font-size: 12px;

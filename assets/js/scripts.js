@@ -162,7 +162,12 @@ $('#page').on('click', function() {
              // init Isotope for Portfolio with Filters
              var iso = new Isotope( '#isotopeGrid', {
                itemSelector: '.itemIso',
-               gutter: 0
+               percentPosition: true,
+
+               masonry: {
+                  // use element for option
+                  columnWidth: '.grid-sizer'
+  }
            });
 
 
