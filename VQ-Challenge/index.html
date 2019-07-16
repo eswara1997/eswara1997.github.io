@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>VQ-Challenge</title>
+    <meta name="description" content="The 2.009 Product Design Process"/>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favico.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div class="main-intro" style="background: #fff url(Imgs/stageOpaque.jpg); background-size:cover">
+      <div class="row demo-row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="#">Eswar</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="../index.html">Home<span class="navbar-unread"></span></a></li>
+
+               </ul>
+
+            </div><!-- /.navbar-collapse -->
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
+
+
+      <div class="container">
+        <div class="demo-headline">
+          <h1 class="demo-logo">
+            <br>
+            <br>
+            VQ-Challenge
+            <small style="color:rgba(212, 213, 217, 1)" >A VR Satelite Visualization Project</small>
+
+          </h1>
+        </div><!-- /demo-headline -->
+      </div>
+      </div>
+
+
+      <div class="container">
+      <div class="demo-row typography-row">
+      	<!-- <div class="demo-title">
+      		<h3 class="demo-panel-title"> As part of the NASA BASALT Analog mission, we at the Human Systems Lab designed a Hololens prototype for using Augmented Reality Navigation.</h3>
+        </div> -->
+
+      <section>
+        <div class ="container">
+
+          <div class="demo-row typography-row">
+
+
+            <div  class="demo-body">
+              <h3>
+                The Air Force Research Lab put out an open innovation challenges for new visualization techniques for satletites called the Visionary Quest Challenge (VQ-challenge)
+               <br>
+               <br>
+               There's a strong need for augmenting existing capabilities to allow operators to intuitively navigate massive amounts of space object data. The accurate and timely tracking of space objects is paramount to space defense. Me and a small team built a prototype of using VR for visualizing existing datasets of satellite data.
+                </div>
+                </div>
+                </div>
+                  </div>
+
+
+                  <br>
+              </h3>
+
+      </section>
+
+
+
+
+
+      </div><!-- /.demo-row -->
+    </div>
+
+
+
+    <section>
+      <div class ="container">
+
+            <h3>
+
+                Our goals were to build a tool that would allow the satelite operator to enter the VR visualization environment when they receive an alert. By doing so, they can quickly navigate the satelites and trajectories to make a decision on changing trajectories as well as monitor proximity operations and orbital activity.       <br>
+                <br>
+
+                <img src="Imgs/3idas2.png" class="img-responsive" width="100%" alt="New York">
+                <br>
+
+                  In January of 2019, we spent 4 days on a design sprint to identify key needs, interfaces, and implement a system in VR. We used an HTC Vive Pro and a Leap Motion for hand tracking. We started with a dataset of about 18,000 satelites. Four hundred synthetic objects were also included with simulation of space events and full trajectories. We took the CSVs of all of this data and processed it in our Unity project. Using the data we created trajectories and positions for all of the satelites. In addition to this, we added some synthetic metadata to each satelite such as country of origin, latest maneuvers, and manufacturing details.
+                <br>
+                <br>
+
+                <img src="Imgs/sketchModels.png" class="img-responsive" width="100%" alt="New York">
+
+                <br>
+                <br>
+
+
+    <!--carousel -->
+
+
+
+
+
+                <br>
+                <h3>
+
+
+                <h1> Overview </h1>
+The system that we called C.O.S.M.I.C. (Command, Sensing, and Mapping Information Center) consists of two key viewpoints. A world view which shows an overview of the earth and all of the satelites and a satelite view. The satelite view can be pulled up for a specific satelite or space event, showing the trajectorie(s) and specific satelite details.
+                <br><br>
+
+                <h1> Interface </h1>
+                The overall design principle for the interface was to be as natural and life like as possible. With the Leap Motion, we were able to add hand tracking and hand interactions. A flick of the wrist pulls up a mini dashboard and menu buttons. This dashboard provides the most critical information. One toggle button brings up the filter menu allowing the user to filter/toggle HEO, LEO, and GEO satellites.
+                <br><br>
+I designed this UI that shows up when a particular satellite is selected.
+                <br><br>
+This shows the alert interface that pops up.                 <br><br>
+The prototype video shows an interaction example and our design philosophies. After building the prototype, we worked with the Air Force on a one week design sprint with Air Force operators in Colorado Springs. There we more clearly understood their needs, and with further input, ideated on how to improve their current system. A key area of interest was sharing and communicating rendezvous incidents of Courses or Action (C.O.As) when multiple parties such as the Air Force Space Command and NASA are working together.                 <br><br>
+
+Taking our prototype and our ideas, the Air Force Research Lab is working on implementing new visualization techniques.
+
+
+
+
+
+
+          <script src="dist/js/vendor/jquery.min.js"></script>
+          <script src="dist/js/vendor/video.js"></script>
+          <script src="dist/js/flat-ui.min.js"></script>
+          <script src="docs/assets/js/application.js"></script>
+          <script  src="js/index.js"></script>
+
+
+          <script>
+            videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
+          </script>
+        </body>
+      </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="transparent-background">
+	<title>Magic Leap Test</title>
+	<link href="./Engage VR - BlueVishnu_files/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="mainContainer">
+	<audio id="main_audio" style="display: none" controls="" autoplay="" loop="">
+		<source src="./audio/slowmotion_loop.mp3" type="audio/mpeg">
+	</audio>
+
+	<button id="mute_button" type="submit" name="mute" value="mute_button" onclick="toggleAudio()">
+		<img id="img1" src="./Engage VR - BlueVishnu_files/muted_button_off.png" style="visibility: visible" alt="Muted On" width="32" height="32" border="none">
+		<img id="img2" src="./Engage VR - BlueVishnu_files/muted_button_on.png" style="visibility: hidden" alt="Muted Off" width="32" height="32" border="none">
+	</button>
+		<div id="camera_rig_photo">
+			<img src="./Engage VR - BlueVishnu_files/bluevishnu_camerarig_resized.jpg" alt="Camera Rig Setup" width="300" height="226" border="none">
+		</div>
+
+	<div id="content">
+		<h2>Welcome to Magic Leap One - Helio Browser  <br>Beta Test</h2>
+
+	<div style="color: #fff; font-family: Arial, Helvetica; position: relative; bottom: -90px;
+	left: 240px;"></div>
+	<ml-quad id="camera_rig_mlnode" src="./img/bluevishnu_cc_rig_highres.png" z-offset="500px" color="rgba(255, 255, 255,0.99)" prism-rotation="0 0.7 0" unbounded="true" style="display: inline-flex;"></ml-quad>
+	<ml-model id="first_model" src="https://h2u2n8x3.stackpathcdn.com/heliotest/models/Priscilla_Posed2.fbx" z-offset="500px" extractable="true" draggable="true" style="display: inline-flex; cursor: -webkit-grab; border: 2px solid rgba(255, 255, 255, 0.28); color: rgb(255, 255, 255); text-transform: uppercase; letter-spacing: 2px; font-size: 14px; padding: 2%;">MR Content</ml-model>
+	</div>
+	<script src="./Engage VR - BlueVishnu_files/prismatic.min.js"></script>
+	<script src="./Engage VR - BlueVishnu_files/imagetoggle.js"></script>
+
+</body></html>
