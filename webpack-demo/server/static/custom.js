@@ -1,0 +1,2 @@
+
+require('ml-aframe');
